@@ -13,6 +13,9 @@ import SwiftyJSON
 import ColorThiefSwift
 import SDWebImage
 
+
+
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var label: UILabel!
     
@@ -36,13 +39,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let parameters : [String:String] = [
             "format" : "json",
             "action" : "query",
-            "prop"   : "extracts",
+            "prop"   : "extracts|pageimages",
             "exintro": "",
             "explaintext" : "",
             "titles" : flowerName,
-            "indexpageids" : "",
             "redirects" : "1",
-
+            "pithumbsize" : "500",
+            "indexpageids" : ""
 
         ]
         AF.request(wikipediaURL, method: .get, parameters: parameters).responseJSON { (response) in
@@ -53,13 +56,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         print(response.result)
 
         let flowerJSON: JSON = JSON(value)
-
+            
         let pageid = flowerJSON["query"]["pageids"][0].stringValue
 
         let flowerDescription = flowerJSON["query"]["pages"][pageid]["extract"].stringValue
 
         print(flowerDescription)
 
+            let flowerImageURL = flowerJSON["query"]["pages"][pageid]["thumbnail"]["source"].stringValue
+           // print("\n \n Test json    \(flowerImageURL)")
+            self.imageView.sd_setImage(with: URL(string: flowerImageURL))
+            
         self.label.text = flowerDescription
 
         case .failure:
@@ -84,7 +91,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-        self.imageView.image = userPickedImage
+        //self.imageView.image = userPickedImage
             
             guard  let ciimage = CIImage(image: userPickedImage) else{
                 fatalError()
