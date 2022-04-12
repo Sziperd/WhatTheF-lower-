@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CB0F5C3727DE51D600A90613 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CB0F5C3627DE51D600A90613 /* FlowerClassifier.mlmodel */; };
 		CB0F5C4C27DF429200A90613 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F5C4B27DF429200A90613 /* Json.swift */; };
+		CB618183280441BD0061AE6D /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CB618182280441BD0061AE6D /* YOLOv3.mlmodel */; };
+		CB618185280443720061AE6D /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CB618184280443720061AE6D /* Inceptionv3.mlmodel */; };
+		CB618187280445680061AE6D /* 640px-Curved_Arrow.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = CB618186280445680061AE6D /* 640px-Curved_Arrow.svg.png */; };
+		CB618189280446C90061AE6D /* A7585518-B68A-47F7-A8E5-54F3478ECEDF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB618188280446C90061AE6D /* A7585518-B68A-47F7-A8E5-54F3478ECEDF.jpg */; };
+		CB61818D2804470C0061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CB61818C2804470C0061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE.PNG */; };
+		CB61818F280447880061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE-kopia.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CB61818E280447880061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE-kopia.PNG */; };
 		CBAA50F227DB74B200FAC575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA50F127DB74B200FAC575 /* AppDelegate.swift */; };
 		CBAA50F427DB74B200FAC575 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA50F327DB74B200FAC575 /* SceneDelegate.swift */; };
 		CBAA50F627DB74B200FAC575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA50F527DB74B200FAC575 /* ViewController.swift */; };
@@ -24,6 +30,12 @@
 		C4B2A35B8949045897341B1E /* Pods-WhatTheF(lower).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatTheF(lower).debug.xcconfig"; path = "Target Support Files/Pods-WhatTheF(lower)/Pods-WhatTheF(lower).debug.xcconfig"; sourceTree = "<group>"; };
 		CB0F5C3627DE51D600A90613 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		CB0F5C4B27DF429200A90613 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		CB618182280441BD0061AE6D /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = SOURCE_ROOT; };
+		CB618184280443720061AE6D /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = SOURCE_ROOT; };
+		CB618186280445680061AE6D /* 640px-Curved_Arrow.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "640px-Curved_Arrow.svg.png"; sourceTree = SOURCE_ROOT; };
+		CB618188280446C90061AE6D /* A7585518-B68A-47F7-A8E5-54F3478ECEDF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A7585518-B68A-47F7-A8E5-54F3478ECEDF.jpg"; sourceTree = SOURCE_ROOT; };
+		CB61818C2804470C0061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6F18E904-8094-4A69-BAFC-B80A44801AEE.PNG"; sourceTree = SOURCE_ROOT; };
+		CB61818E280447880061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE-kopia.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6F18E904-8094-4A69-BAFC-B80A44801AEE-kopia.PNG"; sourceTree = SOURCE_ROOT; };
 		CBAA50EE27DB74B200FAC575 /* WhatTheF(lower).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatTheF(lower).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAA50F127DB74B200FAC575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAA50F327DB74B200FAC575 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,13 +96,19 @@
 		CBAA50F027DB74B200FAC575 /* WhatTheF(lower) */ = {
 			isa = PBXGroup;
 			children = (
+				CB61818C2804470C0061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE.PNG */,
+				CB61818E280447880061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE-kopia.PNG */,
+				CB618188280446C90061AE6D /* A7585518-B68A-47F7-A8E5-54F3478ECEDF.jpg */,
 				CBAA50F127DB74B200FAC575 /* AppDelegate.swift */,
 				CBAA50F327DB74B200FAC575 /* SceneDelegate.swift */,
 				CBAA50F527DB74B200FAC575 /* ViewController.swift */,
+				CB618182280441BD0061AE6D /* YOLOv3.mlmodel */,
+				CB618184280443720061AE6D /* Inceptionv3.mlmodel */,
 				CBAA50F727DB74B200FAC575 /* Main.storyboard */,
 				CB0F5C3627DE51D600A90613 /* FlowerClassifier.mlmodel */,
 				CBAA50FA27DB74B500FAC575 /* Assets.xcassets */,
 				CBAA50FC27DB74B500FAC575 /* LaunchScreen.storyboard */,
+				CB618186280445680061AE6D /* 640px-Curved_Arrow.svg.png */,
 				CBAA50FF27DB74B500FAC575 /* Info.plist */,
 				CB0F5C4B27DF429200A90613 /* Json.swift */,
 			);
@@ -157,7 +175,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB61818F280447880061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE-kopia.PNG in Resources */,
 				CBAA50FE27DB74B500FAC575 /* LaunchScreen.storyboard in Resources */,
+				CB618189280446C90061AE6D /* A7585518-B68A-47F7-A8E5-54F3478ECEDF.jpg in Resources */,
+				CB61818D2804470C0061AE6D /* 6F18E904-8094-4A69-BAFC-B80A44801AEE.PNG in Resources */,
+				CB618187280445680061AE6D /* 640px-Curved_Arrow.svg.png in Resources */,
 				CBAA50FB27DB74B500FAC575 /* Assets.xcassets in Resources */,
 				CBAA50F927DB74B200FAC575 /* Main.storyboard in Resources */,
 			);
@@ -212,11 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB618183280441BD0061AE6D /* YOLOv3.mlmodel in Sources */,
 				CB0F5C3727DE51D600A90613 /* FlowerClassifier.mlmodel in Sources */,
 				CB0F5C4C27DF429200A90613 /* Json.swift in Sources */,
 				CBAA50F627DB74B200FAC575 /* ViewController.swift in Sources */,
 				CBAA50F227DB74B200FAC575 /* AppDelegate.swift in Sources */,
 				CBAA50F427DB74B200FAC575 /* SceneDelegate.swift in Sources */,
+				CB618185280443720061AE6D /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

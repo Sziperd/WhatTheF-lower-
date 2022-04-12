@@ -107,7 +107,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func detect(image: CIImage){
         
-        guard let model = try? VNCoreMLModel(for: FlowerClassifier().model) else{
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else{
             fatalError()
         }
         
