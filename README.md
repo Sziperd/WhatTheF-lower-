@@ -12,8 +12,11 @@ Full app preview here: https://www.instagram.com/p/CcWHAL0D2b9/
 ## Description
 
 Core Machine Learning App
+
 -▫️Uses Wikipedia Api to present descriptions and pictures of objects
+
 -▫️Uses InceptionV3 MLmodel to categorize and name items
+
 -▫️Works without internet. All ML stuff is done directly on the phone.
 
 #### Technologies
